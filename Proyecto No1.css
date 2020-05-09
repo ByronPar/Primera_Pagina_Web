@@ -1,0 +1,145 @@
+body {
+    background-image: url(10.jpg); 
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    font-family: normal;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing:border-box;
+  -moz-sizing:border-box;
+  box-sizing:border-box;  
+}
+
+.CONTACTOS {
+    position: fixed;
+    left:0;
+    top:200px;
+    z-index: 2000;
+
+}
+
+.CONTACTOS ul {
+    list-style:none;
+}
+
+.CONTACTOS ul li a {
+    display:inline-block;
+    color: #fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition: all 400ms ease;
+    -o-transition: all 300ms ease;
+    transition:all 400ms ease;
+}
+
+.CONTACTOS ul li .icon-facebook2 {background: #2803f5;;}
+.CONTACTOS ul li .icon-google-plus2 {background:rgb(255, 0, 0);} 
+.CONTACTOS ul li .icon-whatsapp {background:rgb(12, 155, 48);} 
+
+
+.CONTACTOS ul li a:hover {
+    padding: 10px 30px;
+    background: rgb(73, 73, 71);
+}
+
+header {
+    margin-top: 10px;
+    width: 100px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+}
+
+nav {
+    top:-20px;
+    position: absolute;
+    left:0;
+    right: 0;
+    margin: 20px auto;
+    max-width: 1000px;
+    width: 90%;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav > ul {
+    display: table;
+    width: 100%;
+    background: #000;
+    position: relative;
+}
+
+nav > ul li {
+    display: table-cell;
+}
+
+/*menu desplegable*/
+nav >ul> li:hover >ul{
+    display:block;
+    height: 100%;
+}
+
+nav >ul >li> ul {
+    display: block;
+    position: absolute;
+    background: #000;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    height: 0%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+
+
+nav > ul li a {
+    color:#fff;
+    display: block;
+    line-height: 20px;
+    padding:20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav > ul >li >ul >li a:hover {
+    background: #5da5a2;
+}
+
+nav > ul >li a span {
+    background: #174459;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: -55px;
+}
+
+nav > ul> li >a span .icon {
+    display: block;
+    line-height: 60px;
+}
+
+nav > ul >li> a:hover >span {
+    top:0;
+    
+}
+
